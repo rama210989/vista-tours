@@ -50,3 +50,55 @@ button {
   cursor: pointer;
   margin-top: 10px;
 }
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+section:nth-child(even) {
+  background-color: #ffffff;
+}
+section:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+h1, h2 {
+  color: #1a75ff;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #1a75ff;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #005ce6;
+}
