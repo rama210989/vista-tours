@@ -1,89 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vista Tours - Railay Beach</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-</head>
-<body>
+<!-- Inside the <body>... -->
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#tours">Private Tours</a></li>
-      <li><a href="#transport">Transport</a></li>
-      <li><a href="#accommodation">Stay</a></li>
-      <li><a href="#booking">Booking</a></li>
-      <li><a href="#faqs">FAQs</a></li>
-    </ul>
-  </nav>
+<section id="tours">
+  <h2>Private Tours</h2>
+  <img src="https://source.unsplash.com/600x400/?island,boat" alt="Tour Boat" class="section-img"/>
+  <p>Explore the hidden gems of Railay, Phi Phi, 4-Island, Hong Island, and more with private speedboats or long-tail boats. Customizable itineraries just for you.</p>
+</section>
 
-  <section id="home" class="hero">
-    <h1>Vista Tours – Railay Beach, Thailand</h1>
-    <p>Local expert for private tours, transfers, and island adventures.</p>
-    <a href="#booking"><button>Book Your Tour</button></a>
-  </section>
+<section id="transport">
+  <h2>Transport Services</h2>
+  <img src="https://source.unsplash.com/600x400/?van,transport" alt="Transport Van" class="section-img"/>
+  <p>Book airport transfers, Krabi town pickups, and private longtail transfers to Railay Beach. Reliable and convenient.</p>
+</section>
 
-  <section id="tours">
-    <h2>Private Tours</h2>
-    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" alt="Tour Boat" class="section-img"/>
-    <p>Explore the hidden gems of Railay, Phi Phi, 4-Island, Hong Island, and more with private speedboats or long-tail boats. Customizable itineraries just for you.</p>
-  </section>
-
-  <section id="transport">
-    <h2>Transport Services</h2>
-    <img src="https://images.unsplash.com/photo-1586363104864-9a219bb4bd3d" alt="Transport Van" class="section-img"/>
-    <p>Book airport transfers, Krabi town pickups, and private longtail transfers to Railay Beach. Reliable and convenient.</p>
-  </section>
-
-  <section id="accommodation">
-    <h2>Stay With Us</h2>
-    <img src="https://images.unsplash.com/photo-1587502537745-6d6a7f3f48d8" alt="Resort View" class="section-img"/>
-    <p>Partnered with local resorts to offer special rates. Beachfront bungalows, jungle stays, and budget options available.</p>
-  </section>
-
-  <section id="booking">
-    <h2>Booking & Inquiries</h2>
-    <form id="bookingForm" onsubmit="return sendToWhatsApp();">
-      <input type="text" name="name" id="name" placeholder="Your Name" required />
-      <input type="text" name="tour" id="tour" placeholder="Tour / Service Interested In" required />
-      <input type="date" name="date" id="date" required />
-      <textarea name="message" id="message" placeholder="Additional Details (number of people, pickup, etc.)"></textarea>
-      <button type="submit">Send via WhatsApp</button>
-    </form>
-  </section>
-
-  <section id="faqs">
-    <h2>FAQs</h2>
-    <p><strong>Q:</strong> Can I book on short notice?<br><strong>A:</strong> Yes, subject to availability — WhatsApp us!</p>
-    <p><strong>Q:</strong> What payments do you accept?<br><strong>A:</strong> Bank transfer, cash, or secure online payment links.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Vista Tours, Railay Beach. All rights reserved.</p>
-  </footer>
-
-  <script>
-    function sendToWhatsApp() {
-      const name = document.getElementById('name').value;
-      const tour = document.getElementById('tour').value;
-      const date = document.getElementById('date').value;
-      const msg = document.getElementById('message').value;
-
-      const text = `Hello! I would like to book a service.%0A
-Name: ${name}%0A
-Service: ${tour}%0A
-Date: ${date}%0A
-Details: ${msg}`;
-
-      const phone = '66987654321'; // change to your number
-      const whatsappURL = `https://wa.me/${phone}?text=${text}`;
-      window.open(whatsappURL, '_blank');
-      return false;
-    }
-  </script>
-
-</body>
-</html>
+<section id="accommodation">
+  <h2>Stay With Us</h2>
+  <img src="https://source.unsplash.com/600x400/?beach,resort" alt="Resort View" class="section-img"/>
+  <p>Partnered with local resorts to offer special rates. Beachfront bungalows, jungle stays, and budget options available.</p>
+</section>
