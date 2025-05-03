@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vista Tours - Railay Beach</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -12,106 +12,78 @@
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#tours">Tours</a></li>
-      <li><a href="#private-tours">Private Tours</a></li>
+      <li><a href="#tours">Private Tours</a></li>
       <li><a href="#transport">Transport</a></li>
-      <li><a href="#accommodation">Accommodation</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#accommodation">Stay</a></li>
+      <li><a href="#booking">Booking</a></li>
       <li><a href="#faqs">FAQs</a></li>
     </ul>
   </nav>
 
-  <section id="home">
-    <h1>Welcome to Vista Tours – Railay Beach, Thailand</h1>
-    <p>Your trusted local partner for boat tours, transfers, and island adventures.</p>
-    <p>Discover the best of Railay — book your experience now!</p>
-    <a href="#contact"><button>Book Now</button></a>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a local tour agency based in Railay Beach, offering personalized experiences for travelers looking to explore the beauty of the Andaman Sea.</p>
+  <section id="home" class="hero">
+    <h1>Vista Tours – Railay Beach, Thailand</h1>
+    <p>Local expert for private tours, transfers, and island adventures.</p>
+    <a href="#booking"><button>Book Your Tour</button></a>
   </section>
 
   <section id="tours">
-    <h2>Our Tours</h2>
-    <div class="tour">
-      <h3>4 Islands Tour</h3>
-      <p>Explore Phranang Cave, Talay Waek, Chicken Island, and Poda Island on a 6-hour speedboat journey.</p>
-      <p><strong>Price:</strong> 1,200 THB</p>
-    </div>
-    <div class="tour">
-      <h3>Phi Phi Islands Tour</h3>
-      <p>Visit the iconic Maya Bay, Pileh Lagoon, and more on this 8-hour adventure.</p>
-      <p><strong>Price:</strong> 1,490 THB</p>
-    </div>
-    <div class="tour">
-      <h3>Hong Islands Tour</h3>
-      <p>Discover the beauty of Hong Lagoon and surrounding islands over 7 hours.</p>
-      <p><strong>Price:</strong> 1,350 THB</p>
-    </div>
-  </section>
-
-  <section id="private-tours">
     <h2>Private Tours</h2>
-    <div class="tour">
-      <h3>Private Phi Phi + 4 Islands</h3>
-      <p>Experience the best of both tours in one day with a private speedboat.</p>
-      <p><strong>Price:</strong> 20,000 THB</p>
-    </div>
-    <div class="tour">
-      <h3>Private 4 Islands</h3>
-      <p>Enjoy a personalized journey to the 4 islands with your own group.</p>
-      <p><strong>Price:</strong> 12,000 THB</p>
-    </div>
+    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" alt="Tour Boat" class="section-img"/>
+    <p>Explore the hidden gems of Railay, Phi Phi, 4-Island, Hong Island, and more with private speedboats or long-tail boats. Customizable itineraries just for you.</p>
   </section>
 
   <section id="transport">
     <h2>Transport Services</h2>
-    <p>We offer VIP van services for full-day and half-day trips across Krabi, Phuket, and Phangnga. Our professional drivers ensure a safe and enjoyable journey.</p>
-    <p><strong>Starting from:</strong> Krabi</p>
-    <p><strong>Also available:</strong> Airport transfers from Krabi Airport.</p>
+    <img src="https://images.unsplash.com/photo-1586363104864-9a219bb4bd3d" alt="Transport Van" class="section-img"/>
+    <p>Book airport transfers, Krabi town pickups, and private longtail transfers to Railay Beach. Reliable and convenient.</p>
   </section>
 
   <section id="accommodation">
-    <h2>Our Villas</h2>
-    <div class="accommodation">
-      <h3>Sea Eagle Mountain Villa</h3>
-      <p>Enjoy a cozy stay in our Aonang villa, perfect for families and friends.</p>
-    </div>
-    <div class="accommodation">
-      <h3>Sea Horse Pool Villa</h3>
-      <p>Relax in luxury with our private pool villa, offering stunning views and comfort.</p>
-    </div>
+    <h2>Stay With Us</h2>
+    <img src="https://images.unsplash.com/photo-1587502537745-6d6a7f3f48d8" alt="Resort View" class="section-img"/>
+    <p>Partnered with local resorts to offer special rates. Beachfront bungalows, jungle stays, and budget options available.</p>
   </section>
 
-  <section id="contact">
-    <h2>Contact & Booking</h2>
-    <p>Email us: <a href="mailto:hello@vistatoursrailay.com">hello@vistatoursrailay.com</a></p>
-    <p>Visit us: Railay Walking Street near East Beach</p>
-
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="email" name="email" placeholder="Your Email" required/>
-      <textarea name="message" placeholder="Tell us what you'd like to book..." required></textarea>
-      <button type="submit">Send Booking Request</button>
+  <section id="booking">
+    <h2>Booking & Inquiries</h2>
+    <form id="bookingForm" onsubmit="return sendToWhatsApp();">
+      <input type="text" name="name" id="name" placeholder="Your Name" required />
+      <input type="text" name="tour" id="tour" placeholder="Tour / Service Interested In" required />
+      <input type="date" name="date" id="date" required />
+      <textarea name="message" id="message" placeholder="Additional Details (number of people, pickup, etc.)"></textarea>
+      <button type="submit">Send via WhatsApp</button>
     </form>
-
-    <a class="whatsapp" href="https://wa.me/66987654321" target="_blank">
-      Chat with us on WhatsApp
-    </a>
   </section>
 
   <section id="faqs">
     <h2>FAQs</h2>
-    <p><strong>Q:</strong> Do I need to book in advance?<br/><strong>A:</strong> Yes, we recommend booking at least 24 hours before your trip.</p>
-    <p><strong>Q:</strong> Do you accept credit cards?<br/><strong>A:</strong> Yes, payment can be made online securely.</p>
+    <p><strong>Q:</strong> Can I book on short notice?<br><strong>A:</strong> Yes, subject to availability — WhatsApp us!</p>
+    <p><strong>Q:</strong> What payments do you accept?<br><strong>A:</strong> Bank transfer, cash, or secure online payment links.</p>
   </section>
 
   <footer>
     <p>© 2025 Vista Tours, Railay Beach. All rights reserved.</p>
   </footer>
+
+  <script>
+    function sendToWhatsApp() {
+      const name = document.getElementById('name').value;
+      const tour = document.getElementById('tour').value;
+      const date = document.getElementById('date').value;
+      const msg = document.getElementById('message').value;
+
+      const text = `Hello! I would like to book a service.%0A
+Name: ${name}%0A
+Service: ${tour}%0A
+Date: ${date}%0A
+Details: ${msg}`;
+
+      const phone = '66987654321'; // change to your number
+      const whatsappURL = `https://wa.me/${phone}?text=${text}`;
+      window.open(whatsappURL, '_blank');
+      return false;
+    }
+  </script>
 
 </body>
 </html>
