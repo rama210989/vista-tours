@@ -1,16 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  line-height: 1.6;
   background-color: #f8f9fa;
   color: #333;
 }
 
 nav {
   background: #1a1a2e;
-  color: white;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -41,7 +43,6 @@ nav a:hover {
 
 section {
   padding: 40px 20px;
-  border-bottom: 1px solid #eee;
   max-width: 900px;
   margin: auto;
   text-align: center;
@@ -103,4 +104,50 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+  background-color: #1ebc59;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
