@@ -19,24 +19,24 @@
     </nav>
   </header>
 
-  <section class="section">
+  <section class="contact">
     <h2>Contact Us</h2>
-    <form action="#" method="post" class="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" required />
+    <p>If you have any questions or would like more information about our tours, feel free to reach out to us! We're happy to assist you.</p>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" rows="5" required></textarea>
-
+    <h3>Contact Form</h3>
+    <form class="contact-form" action="mailto:info@vistatours.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit" class="btn">Send Message</button>
     </form>
+
+    <h3>Or Contact Us via WhatsApp</h3>
+    <a href="https://wa.me/66633753486?text=Hello%20Vista%20Tours%20I'm%20interested%20in%20your%20tours!" class="btn" target="_blank">Chat on WhatsApp</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Vista Tours</p>
+    <p>&copy; 2025 Vista Tours. All rights reserved.</p>
   </footer>
 </body>
 </html>
