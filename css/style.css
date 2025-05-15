@@ -152,4 +152,41 @@ footer {
   font-weight: bold;
 }
 
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: url('../images/hero.jpg') no-repeat center center/cover;
+  color: white;
+  position: relative;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.section ul {
+  margin-top: 1rem;
+  line-height: 2;
+  padding-left: 1.2rem;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 55px;
+  height: 55px;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: auto;
+}
+
 
