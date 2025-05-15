@@ -62,3 +62,30 @@ footer {
   padding: 1em;
   margin-top: 2em;
 }
+
+.tours-section {
+  padding: 2em;
+}
+
+.tour-card {
+  background: white;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tour-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.tour-card h2 {
+  margin-top: 0.5em;
+}
+
+.tour-card p {
+  margin: 0.5em 0 1em 0;
+}
+
