@@ -180,34 +180,11 @@ footer p {
 
 
 /* Hero Section */
+
 .hero {
-  background: url('images/hero.jpg') center/cover no-repeat;
+  background-color: #4CAF50; /* Example color (green) */
   padding: 6em 2em;
   text-align: center;
   color: white;
-}
-
-
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
-
-.hero .btn {
-  padding: 0.7em 2em;
-  background-color: #ffffff;
-  color: #4CAF50;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.hero .btn:hover {
-  background-color: #f0f0f0;
 }
 
